@@ -25,7 +25,7 @@ app.UseCors(c =>
 });
 #endregion
 
-app.UseHttpsRedirection();
+app.UseHttpsRedirection(); 
 
 #region [endpoints]
 app.MapGet("/Hero/{id}", async (DataContext context, int id) =>
@@ -66,9 +66,8 @@ app.MapPut("/Hero/{id}", async (DataContext context, SuperHero request) =>
     if (request == null)
         return Results.BadRequest("Hero not found");
 
-    dbHero.Nick = request.Nick;
-    dbHero.LastName = request.LastName;
-    dbHero.FirstName = request.FirstName;
+    dbHero.HeroName = request.HeroName;
+    dbHero.AlterEgo = request.AlterEgo;
     dbHero.ComicID = request.ComicID;
     await context.SaveChangesAsync();
 
