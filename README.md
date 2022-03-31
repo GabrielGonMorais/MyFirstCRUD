@@ -6,7 +6,7 @@ My first CRUD with Minimal API. This simple API shows a list of superheroes, fro
 
 ## Dependencies
 
-Microsoft.EntityFrameworkCore 6.0.2,
-Microsoft.EntityFrameworkCore.SqlServer 6.0.2,
-Microsoft.EntityFrameworkCore.Tools 6.0.2 and
+Microsoft.EntityFrameworkCore 6.0.2,</br>
+Microsoft.EntityFrameworkCore.SqlServer 6.0.2,</br>
+Microsoft.EntityFrameworkCore.Tools 6.0.2 and</br>
 Swashbuckle.AspNetCore 6.2.3
